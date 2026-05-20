@@ -40,6 +40,22 @@
             transform: translateY(-3px);
             border-color: #ff9900;
         }
+        /* 新增：置顶卡片的特殊边框高亮，更显眼 */
+        .card.pin {
+            border-color: #ff9900;
+            background: #332512;
+        }
+        .card.pin:hover {
+            background: #443217;
+        }
+        /* 新增：卡片标题样式 */
+        .card-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 8px;
+            display: block;
+        }
         .url-text {
             font-size: 0.85em;
             color: #aaa;
@@ -66,6 +82,29 @@
 <body>
     <h1>资源导航聚合页</h1>
     <div class="container">
+
+        <!-- ==================== 置顶推荐网站 开始 ==================== -->
+        <a href="https://yigexiaobaicai.github.io/daohang/" class="card pin" target="_blank">
+            <span class="card-title">Stymei全网综合分享</span>
+            <span class="url-text">https://yigexiaobaicai.github.io/daohang/</span>
+            <div class="btn">立即访问</div>
+        </a>
+        <a href="https://codeberg.org/Jsnzkpg/Jsnzkpg" class="card pin" target="_blank">
+            <span class="card-title">镜像仓库</span>
+            <span class="url-text">https://codeberg.org/Jsnzkpg/Jsnzkpg</span>
+            <div class="btn">立即访问</div>
+        </a>
+        <a href="https://jsnzkpg.github.io/" class="card pin" target="_blank">
+            <span class="card-title">裤佬书签收藏</span>
+            <span class="url-text">https://jsnzkpg.github.io/</span>
+            <div class="btn">立即访问</div>
+        </a>
+        <a href="https://jsnzkpg.github.io/TelegramProxy/" class="card pin" target="_blank">
+            <span class="card-title">裤佬免费TG代理</span>
+            <span class="url-text">https://jsnzkpg.github.io/TelegramProxy/</span>
+            <div class="btn">立即访问</div>
+        </a>
+        <!-- ==================== 置顶推荐网站 结束 ==================== -->
 
         <a href="https://zh.stripchat.com/" class="card" target="_blank">
             <span class="url-text">https://zh.stripchat.com/</span>
